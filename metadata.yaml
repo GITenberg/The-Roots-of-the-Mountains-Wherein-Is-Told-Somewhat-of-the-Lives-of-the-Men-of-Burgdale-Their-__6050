@@ -1,0 +1,46 @@
+_repo: The-Roots-of-the-Mountains-Wherein-Is-Told-Somewhat-of-the-Lives-of-the-Men-of-Burgdale-Their-__6050
+creator:
+  author:
+    agent_name: Morris, William
+    alias: Morris, William M.
+    birthdate: 1834
+    deathdate: 1896
+    gutenberg_agent_id: '107'
+    url: http://www.gutenberg.org/2009/agents/107
+    wikipedia: http://en.wikipedia.org/wiki/William_Morris
+description: "The Roots of the Mountains: Wherein is Told Somewhat of the Lives of\
+  \ the Men of Burgdale, Their Friends, Their Neighbors, Their Foemen, and Their Fellows\
+  \ in Arms is a fantasy romance by William Morris, perhaps the first modern fantasy\
+  \ writer to unite an imaginary world with an element of the supernatural, and thus\
+  \ the precursor of much of present-day fantasy literature. It was first published\
+  \ in hardcover by Reeves and Turner in 1889. Its importance in the history of fantasy\
+  \ literature was recognized by its republication by the Newcastle Publishing Company\
+  \ as the nineteenth volume of the Newcastle Forgotten Fantasy Library in April,\
+  \ 1979.\nAccording to Graham Seaman, \"The Roots of the Mountains seems to be the\
+  \ story that inspired the subplot of the Dunedain, wanderers of a fading heroic\
+  \ past defending the frontiers of the Shire against the Orcs, and the loves of Aragorn,\
+  \ Eowyn, Faramir, and Arwen in Tolkien's Lord of the Rings.\"\nThis work and its\
+  \ predecessor, The House of the Wolfings, are to some degree historical novels,\
+  \ with little or no magic. Morris went on to develop the new genre established in\
+  \ these works in such later fantasies as The Wood Beyond the World, Child Christopher\
+  \ and Goldilind the Fair, The Well at the World's End, The Water of the Wondrous\
+  \ Isles and The Sundering Flood.\n From Wikipedia (CC BY-SA)."
+gutenberg_bookshelf: Fantasy
+gutenberg_issued: '2004-07-01'
+gutenberg_type: Text
+identifiers:
+  gutenberg: '6050'
+  wikidata: Q7761520
+language: en
+publisher: Project Gutenberg
+rights: Public domain in the USA.
+rights_url: http://creativecommons.org/about/pdm
+subjects:
+- !lcsh 'Fantasy fiction'
+- !lcc 'PR'
+title: "The Roots of the Mountains\r\nWherein Is Told Somewhat of the Lives of the\
+  \ Men of Burgdale, Their Friends, Their Neighbours, Their Foemen, and Their Fellows\
+  \ in Arms"
+url: http://www.gutenberg.org/ebooks/6050
+wikipedia:
+- https://en.wikipedia.org/wiki/The_Roots_of_the_Mountains
