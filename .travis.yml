@@ -1,0 +1,61 @@
+sudo: required
+dist: trusty
+language: ruby
+
+before_install:
+before_install:
+- gem install asciidoctor -v 1.5.2
+- gem install tilt
+- sudo pip install git+https://github.com/gitenberg-dev/gitberg
+- sudo pip install pillow
+- sudo pip install cssutils
+- sudo pip install docutils
+- sudo pip install roman
+- sudo pip install git+https://github.com/gitenberg-dev/pg-epubmaker
+script:
+- VERSION=`ruby -e "require 'yaml'; meta = YAML.load_file('metadata.yaml'); puts meta['_version'];"`
+- git clone https://github.com/gitenberg-dev/asciidoctor-htmlbook.git
+- sudo pip install -r asciidoctor-htmlbook/gitberg-machine/requirements.txt
+
+- /usr/bin/python -c "from gitenberg import travis; travis.build_epub()"
+- ebook-convert book.epub book.mobi
+- xvfb-run ebook-convert book.epub book.pdf
+branches:
+  only:
+  - master
+notifications:
+  webhooks:
+    urls:
+      - https://unglue.it/api/travisci/webhook
+    on_success: always
+    on_failure: never
+    on_start: never
+deploy:
+  skip_cleanup: true
+  provider: releases
+  api_key:
+    secure: wFL3NqoWFHJ/ekg7AcEMhXXI0UwvmJVVyx2BSYyF36fmjJvgR3c3Z1LwSETRNa/bdsjTdNKUt0FUSFJhTfqHvXR0Sy0noG4x1gl9chu1D1bhe72mNFl9PB7Lsw0Kq+lH3DDVqkAY1/33rHpJQfvB/D5q6H4rjaDYiUqjcZISIglDBMK4NzlJ761Y1PhGC++LZgcwhlZbMVOmBu31TqYs6SdXTIdyp5ETj6jTM99ru/05ByhTLWOfQRDUzyFMx/Lzh3qLpDa1CfxOyl6HrzDbJpqTwQ9Nt6hgJsjB1s2RvxuSSYgi6I2oY231Y93ngoyosug4zeCZVRUiZ9cJXb8FWC5ZsCebyUEq6Lx1+klN/rrMGQS8fhfEPZYPpyuLhCaXkg1GSLWM+etM3r35/E1uj/ni/Mjg+lJl6QePxrEhKVCX2+s1ZZusfqvF8WoOMl6rDpZ+MaMzq0qMBttY+IteIjX8+HJRWdt5hQILUanD6xNVg955joCewNdp81zudTymJ7DK1R2qWjkybmcKS+UesjuWG7DPkj80BXidGKKharRjRaLRO4pQlgPGh1yqKug8W4+zfdm5C8n9HZcDERA/fZKBemy473pCjdbe6HAfnKy/PaEBBOix/DbtZ1olu1boA84L7ozLDaJbSv0APoFi19W2GmS7nJrmVmbZLGQCCtE=
+  file:
+    - book.epub
+    - book.mobi
+    - book.pdf
+  "on":
+    repo: GITenberg/The-Roots-of-the-Mountains-Wherein-Is-Told-Somewhat-of-the-Lives-of-the-Men-of-Burgdale-Their-__6050
+addons:
+  apt:
+    packages:
+    - xsltproc
+    - xvfb
+    - calibre
+    - python-pip
+    - git
+    - python-dev
+    - libjpeg-dev
+    - libpng-dev
+    - libfreetype6
+    - libfreetype6-dev
+    - zlib1g-dev
+    - python-lxml
+    - libxml2-dev
+    - libxslt1-dev
+    - tidy
