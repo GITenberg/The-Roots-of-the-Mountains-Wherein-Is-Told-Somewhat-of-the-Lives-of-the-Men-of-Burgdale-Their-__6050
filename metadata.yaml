@@ -1,5 +1,8 @@
 _repo: The-Roots-of-the-Mountains-Wherein-Is-Told-Somewhat-of-the-Lives-of-the-Men-of-Burgdale-Their-__6050
-_version: 0.1.0
+_version: 0.2.0
+covers:
+- cover_type: generated
+  image_path: cover.png
 creator:
   author:
     agent_name: Morris, William
@@ -26,6 +29,8 @@ description: "The Roots of the Mountains: Wherein is Told Somewhat of the Lives 
   \ these works in such later fantasies as The Wood Beyond the World, Child Christopher\
   \ and Goldilind the Fair, The Well at the World's End, The Water of the Wondrous\
   \ Isles and The Sundering Flood.\n From Wikipedia (CC BY-SA)."
+edition_identifiers:
+  edition_id: http://www.gutenberg.org/ebooks/6050#The-Roots-of-the-Mountains-Wherein-Is-Told-Somewhat-of-the-Lives-of-the-Men-of-Burgdale-Their-_
 gutenberg_bookshelf: Fantasy
 gutenberg_issued: '2004-07-01'
 gutenberg_type: Text
