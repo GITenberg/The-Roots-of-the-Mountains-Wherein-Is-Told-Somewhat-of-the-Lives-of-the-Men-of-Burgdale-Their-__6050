@@ -1,5 +1,5 @@
 _repo: The-Roots-of-the-Mountains-Wherein-Is-Told-Somewhat-of-the-Lives-of-the-Men-of-Burgdale-Their-__6050
-_version: 0.2.0
+_version: 0.2.1
 covers:
 - cover_type: generated
   image_path: cover.png
@@ -44,6 +44,7 @@ rights_url: http://creativecommons.org/about/pdm
 subjects:
 - !lcsh 'Fantasy fiction'
 - !lcc 'PR'
+- GITenberg
 title: "The Roots of the Mountains\r\nWherein Is Told Somewhat of the Lives of the\
   \ Men of Burgdale, Their Friends, Their Neighbours, Their Foemen, and Their Fellows\
   \ in Arms"
